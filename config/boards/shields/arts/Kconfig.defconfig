@@ -24,6 +24,7 @@ if SHIELD_ARTS_LEFT
 		default 148
 
 	config LVGL_BITS_PER_PIXEL
+		int
 		default 1
 
 	choice LVGL_COLOR_DEPTH
