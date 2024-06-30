@@ -429,7 +429,7 @@
 			>;
 		};
 		/*bt {
-			label = "Bluetooth";
+			label = "BTLE";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP    &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
@@ -439,7 +439,7 @@
 			>;
 		};*/
 		bt {
-			label = "Bluetooth";
+			label = "BTLE";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP    &bt_clr_3 &bt_clr_4 &bt_clr_5
@@ -450,7 +450,7 @@
 		};
 		ARDUX_LAYER_CUSTOM
 		functions {
-			label = "Functions";
+			label = "Function";
 			bindings = <
 				LEADING_NONES
 				&kp F1        &kp F2     &kp F3     &kp F4
