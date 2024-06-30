@@ -419,7 +419,7 @@
 			>;
 		};
 		navigation {
-			label = "Navigation";
+			label = "Nav";
 			bindings = <
 				LEADING_NONES
 				&kp PG_UP  &kp PG_DN  &kp HOME    &kp END
