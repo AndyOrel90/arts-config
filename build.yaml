@@ -19,4 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: bat43
+    shield: artsL
+  - board: nice_nano_v2
+    shield: artsR
