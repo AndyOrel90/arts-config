@@ -34,6 +34,10 @@ if SHIELD_ARTS_LEFT
 		int
 		default 1
 
+	choice LVGL_COLOR_DEPTH
+		bool "1-bit"
+		default LVGL_COLOR_DEPTH_1
+	endchoice
 endif
 
 if SHIELD_ARTS_RIGHT
@@ -72,5 +76,8 @@ if SHIELD_ARTS_RIGHT
 		int
 		default 1
 
-
+	choice LVGL_COLOR_DEPTH
+		bool "1-bit"
+		default LVGL_COLOR_DEPTH_1
+	endchoice
 endif
