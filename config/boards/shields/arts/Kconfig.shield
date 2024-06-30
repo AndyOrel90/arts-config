@@ -1,5 +1,5 @@
 config SHIELD_ARTS_LEFT
-	def_bool $(shields_list_contains,arts_left)
+	def_bool $(shields_list_contains,artsL)
 
 config SHIELD_ARTS_RIGHT
-	def_bool $(shields_list_contains,arts_right)
+	def_bool $(shields_list_contains,artsR)
