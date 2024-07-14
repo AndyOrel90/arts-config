@@ -136,17 +136,17 @@
  * Define base layer chars for 'standard ARDUX' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARDUX_COLEMAK definition above if you want this change
  *****************************************/
-/*
+
 #define ARDUX_BASE_N N
 #define ARDUX_BASE_E E
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
 #define ARDUX_BASE_T T
-#define ARDUX_BASE_Y S
-#define ARDUX_BASE_I R
-#define ARDUX_BASE_O A
-#define ARDUX_COMBO_N Y
-*/
+#define ARDUX_BASE_A A
+#define ARDUX_BASE_R R
+#define ARDUX_BASE_S S
+#define ARDUX_BASE_T T
+
 
 /*****************************************
  * Layer IDs used by the ARDUX keymap
@@ -375,9 +375,9 @@
 			label = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS KEY_N  &kp KEY_E     &kp KEY_I     &layer_numbers_kp LAYER_ID_NUMBERS KEY_O
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS KEY_N  &kp ARDUX_BASE_E     &kp ARDUX_BASE_I     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_O
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS KEY_T                &kp KEY_S     &kp KEY_R     &layer_custom_kp LAYER_ID_CUSTOM KEY_A
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T                &kp ARDUX_BASE_S     &kp ARDUX_BASE_R     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_A
 				TRAILING_NONES
 			>;
 		};
