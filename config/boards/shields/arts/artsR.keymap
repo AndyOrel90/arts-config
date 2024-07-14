@@ -32,16 +32,6 @@
   NONE##TENS(NONE10(&none)) \
   NONE##ONES(&none)
 
-
-/*****************************************
- * Define which layout you want to use
- *  ONLY ENABLE ONE OF THESE
-*****************************************/
-//#define ARDUX_LEFT 1
-// If you use COLEMAK as your standard keyboard layout, you may want this
-//     This define will make base ardux keys and N more in line with COLEMAK
-//#define ARDUX_COLEMAK 1
-
 /*****************************************
  * Define key positions used for combos
  * These definitions are used to define the various ARDUX combos
@@ -132,7 +122,6 @@
 #define ARDUX_BASE_O O
 #define ARDUX_COMBO_N N
 */
-//#if ARDUX_COLEMAK
 
 #define ARDUX_BASE_N N
 #define ARDUX_BASE_E E
@@ -143,7 +132,6 @@
 #define ARDUX_BASE_R R
 #define ARDUX_BASE_T T
 
-//#endif
 
 /*****************************************
  * Layer IDs used by the ARDUX keymap
@@ -169,8 +157,8 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-		 /*
 		combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp ENTER>; };
+		/*
 		//combo_control    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_E>; bindings = <&sk LCTRL>; };
 		combo_gui        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_I>; bindings = <&sk LGUI>; };
 		combo_backspace  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_O>; bindings = <&kp BACKSPACE>; };
