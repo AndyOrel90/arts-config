@@ -109,17 +109,7 @@
  * Define custom layer
  *
 *****************************************/
-#define ARDUX_LAYER_CUSTOM                                                   \
-		custom {                                                              \
-			label = "Custom";                                                 \
-			bindings = <                                                      \
-				LEADING_NONES                                                 \
-				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(Z)   &kp LC(C) \
-				MIDDLE_NONES                                                  \
-				&none   &kp LC(X)  &kp LC(Y)   &kp LC(V) \
-				TRAILING_NONES                                                \
-			>;                                                                \
-		};
+
 
 /*****************************************
  * Define base layer chars for 'standard ARDUX' or 'COLEMAK' inspired (you can add more by following the pattern below)
@@ -446,7 +436,16 @@
 				TRAILING_NONES
 			>;
 		};
-		ARDUX_LAYER_CUSTOM
+		custom {                                                              
+			label = "Custom";                                                 
+			bindings = <                                                      
+				LEADING_NONES                                                 
+				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(Z)   &kp LC(C)
+				MIDDLE_NONES
+				&none   &kp LC(X)  &kp LC(Y)   &kp LC(V)
+				TRAILING_NONES
+			>;
+		};
 		functions {
 			label = "Function";
 			bindings = <
