@@ -359,7 +359,6 @@
  * Standard ARDUX layer definitions
  * !!!!!!!!!! FOR LEFT HANDED USE !!!!!!!!!!
  *****************************************/
-#if defined ARDUX_LEFT
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -455,4 +454,3 @@
 		};
 	};
 };
-#endif
