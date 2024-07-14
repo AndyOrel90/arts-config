@@ -48,14 +48,6 @@
  *     - CONFIG_ZMK_COMBO_MAX_PRESSED_COMBOS=8
  *****************************************/
 
-/*****************************************
- * Define which layout you want to use
- *  ONLY ENABLE ONE OF THESE
-*****************************************/
-//#define ARDUX_RIGHT 1
-// If you use COLEMAK as your standard keyboard layout, you may want this
-//     This define will make base ardux keys and N more in line with COLEMAK
-//#define ARDUX_COLEMAK 1
 
 /*****************************************
  * Define key positions used for combos
@@ -138,26 +130,6 @@
 &sl { 
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
-
-/*****************************************
- * Define custom layer
- *
- * You can override this layer by copy/pasting the into your keymap *before* including the ardux.dtsi file
- * Once added to your keymap you can adjust as you see fit
-*****************************************/
-/*
-#define ARDUX_LAYER_CUSTOM                                                   \
-		custom {                                                              \
-			label = "Custom";                                                 \
-			bindings = <                                                      \
-				LEADING_NONES                                                 \
-				&kp LG(LBKT) &kp RG(RBKT)   &kp C_VOL_UP  &none               \
-				MIDDLE_NONES                                                  \
-				&kp LG(LBRC)  &kp RG(RBRC)  &kp C_VOL_DN  &mo LAYER_ID_CUSTOM \
-				TRAILING_NONES                                                \
-			>;                                                                \
-		};
-		*/
 
 
 /*****************************************
