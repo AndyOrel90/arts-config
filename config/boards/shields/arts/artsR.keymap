@@ -52,10 +52,10 @@
  * Define which layout you want to use
  *  ONLY ENABLE ONE OF THESE
 *****************************************/
-#define ARDUX_RIGHT 1
+//#define ARDUX_RIGHT 1
 // If you use COLEMAK as your standard keyboard layout, you may want this
 //     This define will make base ardux keys and N more in line with COLEMAK
-#define ARDUX_COLEMAK 1
+//#define ARDUX_COLEMAK 1
 
 /*****************************************
  * Define key positions used for combos
@@ -66,6 +66,7 @@
  * Default key positions are for a generic 4x2 keyboard and should NOT be used outright
  * DEFINE these definitions in your boards keymap BEFORE including ardux.dtsi
 *****************************************/
+/*
 // ARTS Row
  #define KEY_A 0
  #define KEY_R 1
@@ -76,6 +77,24 @@
  #define KEY_Y 5
  #define KEY_I 6
  #define KEY_O 7
+ */
+
+ // NEIO Row
+ #define KEY_O 3
+ #define KEY_I 2
+ #define KEY_E 1
+ #define KEY_N 0
+// ARST Row
+ #define KEY_A 7
+ #define KEY_R 6
+ #define KEY_S 5
+ #define KEY_T 4
+
+//N E I O
+//0 1 2 3
+
+//T S R A
+//4 5 6 7
 
 
 /*****************************************
@@ -126,6 +145,7 @@
  * You can override this layer by copy/pasting the into your keymap *before* including the ardux.dtsi file
  * Once added to your keymap you can adjust as you see fit
 *****************************************/
+/*
 #define ARDUX_LAYER_CUSTOM                                                   \
 		custom {                                                              \
 			label = "Custom";                                                 \
@@ -137,43 +157,25 @@
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};
+		*/
 
 
 /*****************************************
  * Define base layer chars for 'standard ARDUX' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARDUX_COLEMAK definition above if you want this change
  *****************************************/
-#define ARDUX_BASE_A A
-#define ARDUX_BASE_R R
-#define ARDUX_BASE_T T
-#define ARDUX_BASE_S S
+/*
+#define ARDUX_BASE_N N
 #define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
 #define ARDUX_BASE_I I
 #define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
-#if ARDUX_COLEMAK
-/*#define ARDUX_BASE_A T
-#define ARDUX_BASE_R S
-#define ARDUX_BASE_T R
-#define ARDUX_BASE_S A
-#define ARDUX_BASE_E N
-#define ARDUX_BASE_Y E
-#define ARDUX_BASE_I I
-#define ARDUX_BASE_O O
-#define ARDUX_COMBO_N Y
-*/
-
-#define ARDUX_BASE_A N
-#define ARDUX_BASE_R E
-#define ARDUX_BASE_T I
-#define ARDUX_BASE_S O
-#define ARDUX_BASE_E T
+#define ARDUX_BASE_T T
 #define ARDUX_BASE_Y S
 #define ARDUX_BASE_I R
 #define ARDUX_BASE_O A
 #define ARDUX_COMBO_N Y
 #endif
+*/
 
 /*****************************************
  * Layer IDs used by the ARDUX keymap
@@ -199,7 +201,7 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-		combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_O>; bindings = <&kp ENTER>; };
+		combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp ENTER>; };
 		//combo_control    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_E>; bindings = <&sk LCTRL>; };
 		combo_gui        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_I>; bindings = <&sk LGUI>; };
 		//combo_alt        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_Y>; bindings = <&sk LALT>; };
@@ -406,9 +408,9 @@
 			label = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A  &kp ARDUX_BASE_R     &kp ARDUX_BASE_T     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS N  &kp E     &kp I     &layer_numbers_kp LAYER_ID_NUMBERS O
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E                &kp ARDUX_BASE_Y     &kp ARDUX_BASE_I     &layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O
+				&layer_symbols_kp LAYER_ID_SYMBOLS T                &kp S     &kp R     &layer_custom_kp LAYER_ID_CUSTOM A
 				TRAILING_NONES
 				#if defined CUSTOM_THUMB
 				CUSTOM_THUMB
@@ -465,7 +467,16 @@
 				TRAILING_NONES
 			>;
 		};
-		ARDUX_LAYER_CUSTOM
+		custom {                                                              
+			label = "Custom";                                                 
+			bindings = <                                                      
+				LEADING_NONES                                                 
+				&kp LG(LBKT) &kp RG(RBKT)   &kp C_VOL_UP  &none               
+				MIDDLE_NONES                                                  
+				&kp LG(LBRC)  &kp RG(RBRC)  &kp C_VOL_DN  &mo LAYER_ID_CUSTOM 
+				TRAILING_NONES                                                
+			>;
+		};
 		functions {
 			label = "Function";
 			bindings = <
