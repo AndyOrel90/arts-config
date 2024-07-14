@@ -176,7 +176,7 @@
 		combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp ENTER>; };
 		combo_gui        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_I>; bindings = <&sk LGUI>; };
 		combo_backspace  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_O>; bindings = <&kp BACKSPACE>; };
-		combo_delete     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_T>; bindings = <&kp DELETE>; };
+		//combo_delete     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_T>; bindings = <&kp DELETE>; };
 		combo_shift      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_I>; bindings = <&sk LSHFT>; };
 
 		combo_tab        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_O>; bindings = <&kp TAB>; };	
