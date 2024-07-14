@@ -146,7 +146,6 @@
 #define ARDUX_BASE_I R
 #define ARDUX_BASE_O A
 #define ARDUX_COMBO_N Y
-
 */
 
 /*****************************************
@@ -376,13 +375,10 @@
 			label = "ARDUX";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS N  &kp E     &kp I     &layer_numbers_kp LAYER_ID_NUMBERS O
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS KEY_N  &kp KEY_E     &kp KEY_I     &layer_numbers_kp LAYER_ID_NUMBERS KEY_O
 				MIDDLE_NONES
-				&layer_symbols_kp LAYER_ID_SYMBOLS T                &kp S     &kp R     &layer_custom_kp LAYER_ID_CUSTOM A
+				&layer_symbols_kp LAYER_ID_SYMBOLS KEY_T                &kp KEY_S     &kp KEY_R     &layer_custom_kp LAYER_ID_CUSTOM KEY_A
 				TRAILING_NONES
-				#if defined CUSTOM_THUMB
-				CUSTOM_THUMB
-				#endif
 			>;
 		};
 		numbers {
