@@ -128,15 +128,14 @@
 */
 //#if ARDUX_COLEMAK
 
-#define ARDUX_BASE_A N
-#define ARDUX_BASE_R E
-#define ARDUX_BASE_T I
-#define ARDUX_BASE_S O
-#define ARDUX_BASE_E T
-#define ARDUX_BASE_Y S
-#define ARDUX_BASE_I R
-#define ARDUX_BASE_O A
-#define ARDUX_COMBO_N Y
+#define ARDUX_BASE_N N
+#define ARDUX_BASE_E E
+#define ARDUX_BASE_I I
+#define ARDUX_BASE_O O
+#define ARDUX_BASE_A A
+#define ARDUX_BASE_S S
+#define ARDUX_BASE_R R
+#define ARDUX_BASE_T T
 
 //#endif
 
@@ -164,7 +163,7 @@
 		/*****************************************
 		 * 2 key combos
 		 *****************************************/
-		combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp ENTER>; };
+		//combo_enter      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp ENTER>; };
 		//combo_control    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_E>; bindings = <&sk LCTRL>; };
 		combo_gui        { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_I>; bindings = <&sk LGUI>; };
 		combo_backspace  { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_O>; bindings = <&kp BACKSPACE>; };
