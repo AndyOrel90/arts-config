@@ -213,6 +213,8 @@
 		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_I>; bindings = <&kp D>; };
 		combo_p            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_A>; bindings = <&kp P>; };
 		combo_q            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_O>; bindings = <&kp Q>; };
+		combo_test_p       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_A>; bindings = <&kp P>; };
+		combo_test_q       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_I KEY_O>; bindings = <&kp Q>; };
 		combo_l            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_R>; bindings = <&kp L>; };	
 		combo_x            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_I KEY_O>; bindings = <&kp X>; };
 		combo_single_quote { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_S KEY_R>; bindings = <&kp SQT>; };
