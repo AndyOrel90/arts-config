@@ -194,8 +194,8 @@
 		combo_plus      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&kp PLUS>; };	
 		combo_grave     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_R>; bindings = <&kp GRAVE>; };
 
-		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp LC(S)>; };
-		combo_ctrl_find { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&kp LC(F)>; };
+		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_O>; bindings = <&kp LC(S)>; };
+		combo_ctrl_find { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp LC(F)>; };
 
 		combo_F9 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&kp F9>; };
 		combo_F10 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp F10>; };
@@ -335,9 +335,9 @@
 			label = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_N
 				MIDDLE_NONES
-				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T
+				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T
 				TRAILING_NONES
 			>;
 		};
@@ -345,9 +345,9 @@
 			label = "Numbers";
 			bindings = <
 				LEADING_NONES
-				&none                  &kp N4    &kp N5    &kp N6
+				&kp N1    &kp N2    &kp N3 &mo LAYER_ID_NUMBERS
 				MIDDLE_NONES
-				&mo LAYER_ID_NUMBERS   &kp N1    &kp N2    &kp N3
+				&kp N4    &kp N5    &kp N6 &none
 				TRAILING_NONES
 			>;
 		};
@@ -355,9 +355,9 @@
 			label = "Symbols";
 			bindings = <
 				LEADING_NONES
-				&kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &none
+				&none &kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  
 				MIDDLE_NONES
-				&kp HASH  &kp EQUAL  &kp MINUS  &mo LAYER_ID_SYMBOLS
+				&mo LAYER_ID_SYMBOLS &kp HASH  &kp EQUAL  &kp MINUS  
 				TRAILING_NONES
 			>;
 		};
