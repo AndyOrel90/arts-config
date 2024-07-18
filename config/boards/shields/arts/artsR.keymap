@@ -212,8 +212,8 @@
 
 		combo_m            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_R KEY_A>; bindings = <&kp M>; };
 		combo_d            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_I>; bindings = <&kp D>; };
-		combo_p            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_A>; bindings = <&kp P>; };
-		combo_q            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_O>; bindings = <&kp Q>; };
+		combo_p            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_E KEY_I>; bindings = <&kp P>; };
+		combo_q            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_A>; bindings = <&kp Q>; };
 		combo_test_p       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_R KEY_A>; bindings = <&kp P>; };
 		combo_test_q       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_S KEY_I KEY_O>; bindings = <&kp Q>; };
 		combo_l            { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_R>; bindings = <&kp L>; };	
@@ -335,9 +335,9 @@
 			label = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_N
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E    &layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_N
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T
+				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S   &layer_numbers_kp LAYER_ID_NUMBERS  ARDUX_BASE_T
 				TRAILING_NONES
 			>;
 		};
@@ -395,9 +395,9 @@
 			label = "BTLE";
 			bindings = <
 				LEADING_NONES
-				ARDUX_BT_TOP    &bt_clr_3 &bt_clr_4 &bt_clr_5
+				&bt_clr_1 &bt_clr_2 &bt_clr_3 ARDUX_BT_TOP
 				MIDDLE_NONES
-				ARDUX_BT_BOTTOM &bt_clr_0 &bt_clr_1 &bt_clr_2
+				&bt_clr_4 &bt_clr_5 &bt_clr_6 ARDUX_BT_BOTTOM
 				TRAILING_NONES
 			>;
 		};

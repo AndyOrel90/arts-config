@@ -105,39 +105,11 @@
 	release-after-ms = <TIMEOUT_STICKY_LEADER_KEY>;
 };
 
-/*****************************************
- * Define custom layer
- *
-*****************************************/
-/*
-#define ARDUX_LAYER_CUSTOM                                                   \
-		custom {                                                              \
-			label = "Custom";                                                 \
-			bindings = <                                                      \
-				LEADING_NONES                                                 \
-				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(X)   &kp LC(C) 		  \
-				MIDDLE_NONES                                                  \
-				&none   &kp LC(Y)  &kp LC(Z)   &kp LC(V) 		              \
-				TRAILING_NONES                                                \
-			>;                                                                \
-		};
-*/
 
 /*****************************************
  * Define base layer chars for 'standard ARDUX' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARDUX_COLEMAK definition above if you want this change
  *****************************************/
- /*
-#define ARDUX_BASE_A A
-#define ARDUX_BASE_R R
-#define ARDUX_BASE_T T
-#define ARDUX_BASE_S S
-#define ARDUX_BASE_E E
-#define ARDUX_BASE_Y Y
-#define ARDUX_BASE_I I
-#define ARDUX_BASE_O O
-#define ARDUX_COMBO_N N
-*/
 #if ARDUX_COLEMAK
 
 #define ARDUX_BASE_A N
@@ -389,7 +361,7 @@
 			>;
 		};
 		symbols {
-			label = "Symbols";
+			label = "Symbol";
 			bindings = <
 				LEADING_NONES
 				&kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &none
@@ -399,7 +371,7 @@
 			>;
 		};
 		parentheticals {
-			label = "Parens";
+			label = "Paren";
 			bindings = <
 				LEADING_NONES
 				&kp LBRC                                    &kp LPAR  &kp RPAR  &mo LAYER_ID_PARENTHETICALS
@@ -439,7 +411,7 @@
 			>;
 		};
 		custom {                                                              
-			label = "Custom";                                                 
+			label = "Shortcut";                                                 
 			bindings = <                                                      
 				LEADING_NONES                                                 
 				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(X)   &kp LC(C) 		  
