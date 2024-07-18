@@ -114,9 +114,9 @@
 			label = "Custom";                                                 \
 			bindings = <                                                      \
 				LEADING_NONES                                                 \
-				&none  &kp LC(Y)  &kp LC(A)   &kp LC(C) 					  \
+				&mo LAYER_ID_CUSTOM  &kp LC(Y)  &kp LC(A)   &kp LC(C) 		  \
 				MIDDLE_NONES                                                  \
-				&mo LAYER_ID_CUSTOM   &kp LC(Z)  &kp LC(X)   &kp LC(V) 		  \
+				&none   &kp LC(Z)  &kp LC(X)   &kp LC(V) 		              \
 				TRAILING_NONES                                                \
 			>;                                                                \
 		};
@@ -227,8 +227,8 @@
 		combo_plus      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_Y>; bindings = <&kp PLUS>; };	
 		combo_grave     { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_I>; bindings = <&kp GRAVE>; };
 
-		combo_ctrl_find { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp LC(F)>; };
-		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_Y KEY_I>; bindings = <&kp LC(S)>; };
+		combo_ctrl_find { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp LC(F)>; };
+		combo_ctrl_save { layers = <LAYER_ID_CUSTOM>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_T>; bindings = <&kp LC(S)>; };
 
 		combo_F9 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_R>; bindings = <&kp F9>; };
 		combo_F10 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp F10>; };
@@ -379,9 +379,9 @@
 			label = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
+				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
 				MIDDLE_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_O          &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
+				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_O          &kp ARDUX_BASE_I     &kp ARDUX_BASE_Y     &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_E
 				TRAILING_NONES
 			>;
 		};
@@ -389,9 +389,9 @@
 			label = "Numbers";
 			bindings = <
 				LEADING_NONES
-				&mo LAYER_ID_NUMBERS                 &kp N1    &kp N2    &kp N3
+				&none                   &kp N1    &kp N2    &kp N3
 				MIDDLE_NONES
-				&none    &kp N4    &kp N5    &kp N6
+				&mo LAYER_ID_NUMBERS    &kp N4    &kp N5    &kp N6
 				TRAILING_NONES
 			>;
 		};
