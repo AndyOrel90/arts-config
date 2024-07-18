@@ -42,10 +42,10 @@
  * DEFINE these definitions in your boards keymap BEFORE including ardux.dtsi
 *****************************************/
  // NEIO Row
- #define KEY_O 3
- #define KEY_I 2
- #define KEY_E 1
- #define KEY_N 0
+ #define KEY_O 0
+ #define KEY_I 1
+ #define KEY_E 2
+ #define KEY_N 3
 // ARST Row
  #define KEY_A 4
  #define KEY_R 5
