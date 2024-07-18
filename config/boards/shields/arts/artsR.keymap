@@ -42,10 +42,10 @@
  * DEFINE these definitions in your boards keymap BEFORE including ardux.dtsi
 *****************************************/
  // NEIO Row
- #define KEY_O 0
- #define KEY_I 1
- #define KEY_E 2
- #define KEY_N 3
+ #define KEY_O 3
+ #define KEY_I 2
+ #define KEY_E 1
+ #define KEY_N 0
 // ARST Row
  #define KEY_A 4
  #define KEY_R 5
@@ -335,7 +335,7 @@
 			label = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E    &layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_N
+				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N        &kp ARDUX_BASE_E     &kp ARDUX_BASE_I    &layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O
 				MIDDLE_NONES
 				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S   &layer_numbers_kp LAYER_ID_NUMBERS  ARDUX_BASE_T
 				TRAILING_NONES
