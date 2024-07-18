@@ -395,9 +395,9 @@
 			label = "BTLE";
 			bindings = <
 				LEADING_NONES
-				&bt_clr_1 &bt_clr_2 &bt_clr_3 ARDUX_BT_TOP
+				&bt_clr_0 &bt_clr_1 &bt_clr_2 ARDUX_BT_TOP
 				MIDDLE_NONES
-				&bt_clr_4 &bt_clr_5 &bt_clr_6 ARDUX_BT_BOTTOM
+				&bt_clr_3 &bt_clr_4 &bt_clr_5 ARDUX_BT_BOTTOM
 				TRAILING_NONES
 			>;
 		};
