@@ -177,8 +177,8 @@
 		//combo_alt_tab     { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_O KEY_A>; bindings = <&kp LA(TAB)>; };
 
 		combo_seven { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp N7>; };
-		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_A>; bindings = <&kp N8>; };
-		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp N9>; };
+		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp N8>; };
+		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp N9>; };
 		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&kp N0>; };
 
 		combo_lt     { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp LT>; };
@@ -359,9 +359,9 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&none &kp UNDERSCORE  &kp ASTERISK  &kp  DOLLAR
+				&kp DOLLAR  &kp ASTERISK  &kp  UNDERSCORE &none
 				MIDDLE_NONES
-				&mo LAYER_ID_SYMBOLS &kp  MINUS &kp EQUAL  &kp   HASH
+				&kp   HASH  &kp EQUAL &kp  MINUS  &mo LAYER_ID_SYMBOLS
 				TRAILING_NONES
 			>;
 		};
