@@ -349,9 +349,9 @@
 			label = "Number";
 			bindings = <
 				LEADING_NONES
-				&kp N1    &kp N2    &kp N3 &none
+				&kp N3    &kp N2    &kp N1 &none
 				MIDDLE_NONES
-				&kp N4    &kp N5    &kp N6  &mo LAYER_ID_NUMBERS
+				&kp N6    &kp N5    &kp N4  &mo LAYER_ID_NUMBERS
 				TRAILING_NONES
 			>;
 		};
@@ -359,9 +359,9 @@
 			label = "Symbol";
 			bindings = <
 				LEADING_NONES
-				&none &kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  
+				&none &kp UNDERSCORE  &kp ASTERISK  &kp  DOLLAR
 				MIDDLE_NONES
-				&mo LAYER_ID_SYMBOLS &kp HASH  &kp EQUAL  &kp MINUS  
+				&mo LAYER_ID_SYMBOLS &kp  MINUS &kp EQUAL  &kp   HASH
 				TRAILING_NONES
 			>;
 		};
@@ -369,9 +369,9 @@
 			label = "Paren";
 			bindings = <
 				LEADING_NONES
-				&kp LBRC                                    &kp LPAR  &kp RPAR  &mo LAYER_ID_PARENTHETICALS
+				&kp  LBRC   &kp RPAR  &kp   LPAR &mo LAYER_ID_PARENTHETICALS
 				MIDDLE_NONES
-				&kp RBRC                                    &kp LBKT  &kp RBKT  &none
+				&kp RBRC    &kp RBKT  &kp LBKT  &none
 				TRAILING_NONES
 			>;
 		};
