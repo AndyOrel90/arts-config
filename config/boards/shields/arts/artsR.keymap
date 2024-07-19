@@ -379,9 +379,9 @@
 			label = "Nav";
 			bindings = <
 				LEADING_NONES
-				&kp HOME    &kp END &kp PG_UP  &kp PG_DN  
+				 &kp PG_UP  &kp PG_DN   &kp HOME &kp END
 				MIDDLE_NONES
-				&kp RIGHT  &kp DOWN &kp UP   &kp LEFT
+				&kp RIGHT   &kp UP  &kp DOWN &kp LEFT
 				TRAILING_NONES
 			>;
 		};
