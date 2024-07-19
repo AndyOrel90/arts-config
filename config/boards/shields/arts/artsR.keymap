@@ -188,7 +188,7 @@
 		
 		combo_at        { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp AT>; };
 		combo_backslash { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp BACKSLASH>; };
-		combo_pipe      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp PIPE>; };
+		combo_pipe      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_A>; bindings = <&kp PIPE>; };
 		combo_ampersand { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp AMPERSAND>; };
 		combo_percent   { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_T>; bindings = <&kp PERCENT>; };
 		combo_plus      { layers = <LAYER_ID_SYMBOLS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_S>; bindings = <&kp PLUS>; };	
@@ -379,9 +379,9 @@
 			label = "Nav";
 			bindings = <
 				LEADING_NONES
-				&kp PG_UP  &kp PG_DN  &kp HOME    &kp END
+				&kp HOME    &kp END &kp PG_UP  &kp PG_DN  
 				MIDDLE_NONES
-				&kp LEFT  &kp UP &kp DOWN  &kp RIGHT
+				&kp RIGHT  &kp DOWN &kp UP   &kp LEFT
 				TRAILING_NONES
 			>;
 		};
