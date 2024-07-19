@@ -335,7 +335,7 @@
 			label = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N        &kp ARDUX_BASE_E     &kp ARDUX_BASE_I    &layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O
+				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N
 				MIDDLE_NONES
 				&layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S   &layer_numbers_kp LAYER_ID_NUMBERS  ARDUX_BASE_T
 				TRAILING_NONES
@@ -345,9 +345,9 @@
 			label = "Numbers";
 			bindings = <
 				LEADING_NONES
-				&kp N1    &kp N2    &kp N3 &mo LAYER_ID_NUMBERS
+				&kp N1    &kp N2    &kp N3 &none
 				MIDDLE_NONES
-				&kp N4    &kp N5    &kp N6 &none
+				&kp N4    &kp N5    &kp N6  &mo LAYER_ID_NUMBERS
 				TRAILING_NONES
 			>;
 		};
