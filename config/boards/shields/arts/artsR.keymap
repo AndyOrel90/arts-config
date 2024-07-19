@@ -178,7 +178,7 @@
 
 		combo_seven { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp N7>; };
 		combo_eight { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_A>; bindings = <&kp N8>; };
-		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kp N9>; };
+		combo_nine  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_S KEY_R>; bindings = <&kp N9>; };
 		combo_zero  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&kp N0>; };
 
 		combo_lt     { layers = <LAYER_ID_PARENTHETICALS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_I>; bindings = <&kp LT>; };
@@ -409,9 +409,9 @@
 			label = "Shortcut";                                                 
 			bindings = <                                                      
 				LEADING_NONES                                                 
-				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(Z)   &kp LC(C)
+				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(X)   &kp LC(C)
 				MIDDLE_NONES
-				&none   &kp LC(X)  &kp LC(Y)   &kp LC(V)
+				&none   &kp LC(Y)  &kp LC(Z)   &kp LC(V)
 				TRAILING_NONES
 			>;
 		};
@@ -419,9 +419,9 @@
 			label = "Function";
 			bindings = <
 				LEADING_NONES
-				&kp F1        &kp F2     &kp F3     &kp F4
+				&kp F4        &kp F3     &kp F2     &kp F1
 				MIDDLE_NONES
-				&kp F5          &kp F6     &kp F7     &kp F8
+				&kp F8          &kp F7     &kp F6     &kp F5
 				TRAILING_NONES
 			>;
 		};
