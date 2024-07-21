@@ -201,8 +201,8 @@
 		combo_F11 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_T KEY_S>; bindings = <&kp F11>; };
 		combo_F12 { layers = <LAYER_ID_FUNCTIONS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_R KEY_A>; bindings = <&kp F12>; };
 
-		combo_nav_ctrl  { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&sk LCTRL>; };
-		combo_nav_shift { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&sk LSHIFT>; };
+		combo_nav_ctrl  { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_N KEY_E>; bindings = <&kt LCTRL>; };
+		combo_nav_shift { layers = <LAYER_ID_NAVIGATION>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_O>; bindings = <&kt LSHIFT>; };
 		
 		/*****************************************
 		 * 3 key combos
