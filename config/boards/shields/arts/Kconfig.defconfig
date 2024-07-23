@@ -53,7 +53,7 @@ endif
 if SHIELD_ARTS_RIGHT
 	config ZMK_KEYBOARD_NAME
 		default "artsR"
-
+		
 	config I2C
 		bool
 		default y
@@ -100,5 +100,4 @@ if SHIELD_ARTS_RIGHT
 			default LV_COLOR_DEPTH_1
 		endchoice
 	endif # LVGL
-
 endif

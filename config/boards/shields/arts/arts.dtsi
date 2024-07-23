@@ -31,6 +31,8 @@
 
 		label = "KSCAN";
 
+		wakeup-source;
+
 		input-gpios
 			= <&pro_micro_a 0 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&pro_micro_a 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
