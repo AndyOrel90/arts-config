@@ -243,7 +243,6 @@
 		 * 4 key combos
 		 *****************************************/
 		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
-		//combo_bt_ldr          { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_E KEY_Y>; bindings = <&bootloader>; };
 
 		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 		combo_layer_functions { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_T KEY_I KEY_S KEY_O>; bindings = <&tog LAYER_ID_FUNCTIONS>; };
