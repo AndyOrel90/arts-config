@@ -250,7 +250,6 @@
 / {
     macros {
         numlock: numlock {
-            label = "NLCK";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings
@@ -260,37 +259,31 @@
                 ;
         };
 		bt_clr_0: bt_clr_0 {
-			label = "bt_clr_0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 0 &out OUT_BLE>;
         };
 		bt_clr_1: bt_clr_1 {
-			label = "bt_clr_1";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 1 &out OUT_BLE>;
         };	
 		bt_clr_2: bt_clr_2 {
-			label = "bt_clr_2";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 2 &out OUT_BLE>;
         };
 		bt_clr_3: bt_clr_3 {
-			label = "bt_clr_3";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 3 &out OUT_BLE>;
         };
 		bt_clr_4: bt_clr_4 {
-			label = "bt_clr_4";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 4 &out OUT_BLE>;
         };
 		bt_clr_5: bt_clr_5 {
-			label = "bt_clr_5";	
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&bt BT_SEL 5 &out OUT_BLE>;
@@ -304,26 +297,26 @@
  *****************************************/
 / {
 	behaviors {
-		layer_base_kp: layer_base_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_base_kp"; 
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
+		layer_base_kp: layer_base_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
 						bindings = <&mo>, <&kp>; };
-		layer_numbers_kp: layer_numbers_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_numbers_kp"; 
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
+		layer_numbers_kp: layer_numbers_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
 						bindings = <&mo>, <&kp>; };
-		layer_symbols_kp: layer_symbols_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_symbols_kp"; 
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
+		layer_symbols_kp: layer_symbols_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred"; 
 						bindings = <&mo>, <&kp>; };
-		layer_parentheticals_kp: layer_parentheticals_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_parentheticals_kp";
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+		layer_parentheticals_kp: layer_parentheticals_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
-		layer_custom_kp: layer_custom_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_custom_kp";
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+		layer_custom_kp: layer_custom_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
-		layer_functions_kp: layer_functions_kp { compatible = "zmk,behavior-hold-tap"; label = "layer_functions_kp";
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+		layer_functions_kp: layer_functions_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&mo>, <&kp>; };
-		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap"; label = "ctrl_alt_kp";
-						#binding-cells = <2>; tapping_term_ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
+		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap";
+						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&sk>, <&sk>; };
 	};
 };
@@ -336,7 +329,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 		base {
-			label = "Base";
+			display-name = "Base";
 			bindings = <
 				LEADING_NONES
 				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N
@@ -346,7 +339,7 @@
 			>;
 		};
 		numbers {
-			label = "Number";
+			display-name = "Number";
 			bindings = <
 				LEADING_NONES
 				&none &kp N3    &kp N2    &kp N1 
@@ -356,7 +349,7 @@
 			>;
 		};
 		symbols {
-			label = "Symbol";
+			display-name = "Symbol";
 			bindings = <
 				LEADING_NONES
 				&kp DOLLAR  &kp ASTERISK  &kp  UNDERSCORE &none
@@ -366,7 +359,7 @@
 			>;
 		};
 		parentheticals {
-			label = "Paren";
+			display-name = "Paren";
 			bindings = <
 				LEADING_NONES
 				&kp  LBRC   &kp RPAR  &kp   LPAR &mo LAYER_ID_PARENTHETICALS
@@ -376,7 +369,7 @@
 			>;
 		};
 		navigation {
-			label = "Nav";
+			display-name = "Nav";
 			bindings = <
 				LEADING_NONES
 				 &kp PG_DN  &kp  PG_UP  &kp END &kp HOME
@@ -396,7 +389,7 @@
 			>;
 		};*/
 		bt {
-			label = "BTLE";
+			display-name = "BTLE";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP &bt_clr_2 &bt_clr_1 &bt_clr_0 
@@ -406,7 +399,7 @@
 			>;
 		};
 		custom {                                                              
-			label = "Shortcut";                                                 
+			display-name = "Shortcut";                                                 
 			bindings = <                                                      
 				LEADING_NONES                                                 
 				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(X)   &kp LC(C)
@@ -416,7 +409,7 @@
 			>;
 		};
 		functions {
-			label = "Function";
+			display-name = "Function";
 			bindings = <
 				LEADING_NONES
 				&kp F4        &kp F3     &kp F2     &kp F1
