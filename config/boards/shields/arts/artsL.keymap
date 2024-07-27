@@ -343,7 +343,7 @@
 	keymap {
 		compatible = "zmk,keymap";
 		base {
-			label = "Base";
+			display-name = "Base";
 			bindings = <
 				LEADING_NONES
 				&layer_custom_kp LAYER_ID_CUSTOM ARDUX_BASE_S        &kp ARDUX_BASE_T     &kp ARDUX_BASE_R     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_A
@@ -353,7 +353,7 @@
 			>;
 		};
 		numbers {
-			label = "Numbers";
+			display-name = "Numbers";
 			bindings = <
 				LEADING_NONES
 				&none                   &kp N1    &kp N2    &kp N3
@@ -363,7 +363,7 @@
 			>;
 		};
 		symbols {
-			label = "Symbol";
+			display-name = "Symbol";
 			bindings = <
 				LEADING_NONES
 				&kp DOLLAR  &kp ASTERISK  &kp UNDERSCORE  &none
@@ -373,7 +373,7 @@
 			>;
 		};
 		parentheticals {
-			label = "Paren";
+			display-name = "Paren";
 			bindings = <
 				LEADING_NONES
 				&kp LBRC                                    &kp LPAR  &kp RPAR  &mo LAYER_ID_PARENTHETICALS
@@ -383,7 +383,7 @@
 			>;
 		};
 		navigation {
-			label = "Nav";
+			display-name = "Nav";
 			bindings = <
 				LEADING_NONES
 				&kp PG_UP  &kp PG_DN  &kp HOME    &kp END
@@ -393,7 +393,7 @@
 			>;
 		};
 		/*bt {
-			label = "BTLE";
+			display-name = "BTLE";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP    &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5
@@ -403,7 +403,7 @@
 			>;
 		};*/
 		bt {
-			label = "BTLE";
+			display-name = "BTLE";
 			bindings = <
 				LEADING_NONES
 				ARDUX_BT_TOP    &bt_clr_3 &bt_clr_4 &bt_clr_5
@@ -413,7 +413,7 @@
 			>;
 		};
 		custom {                                                              
-			label = "Shortcut";                                                 
+			display-name = "Shortcut";                                                 
 			bindings = <                                                      
 				LEADING_NONES                                                 
 				&mo LAYER_ID_CUSTOM  &kp LC(A)  &kp LC(X)   &kp LC(C) 		  
@@ -423,7 +423,7 @@
 			>;                                                                
 		};
 		functions {
-			label = "Function";
+			display-name = "Function";
 			bindings = <
 				LEADING_NONES
 				&kp F1        &kp F2     &kp F3     &kp F4
