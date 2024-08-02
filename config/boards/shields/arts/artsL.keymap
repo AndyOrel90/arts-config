@@ -34,15 +34,6 @@
 
 
 /*****************************************
- * Define which layout you want to use
- *  ONLY ENABLE ONE OF THESE
-*****************************************/
-#define ARDUX_LEFT 1
-// If you use COLEMAK as your standard keyboard layout, you may want this
-//     This define will make base ardux keys and N more in line with COLEMAK
-#define ARDUX_COLEMAK 1
-
-/*****************************************
  * Define key positions used for combos
  * These definitions are used to define the various ARDUX combos
  * 
@@ -110,7 +101,6 @@
  * Define base layer chars for 'standard ARDUX' or 'COLEMAK' inspired (you can add more by following the pattern below)
  * Turn on the ARDUX_COLEMAK definition above if you want this change
  *****************************************/
-#if ARDUX_COLEMAK
 
 #define ARDUX_BASE_A N
 #define ARDUX_BASE_R E
@@ -122,7 +112,7 @@
 #define ARDUX_BASE_O A
 #define ARDUX_COMBO_N Y
 
-#endif
+
 
 /*****************************************
  * Layer IDs used by the ARDUX keymap
@@ -331,7 +321,6 @@
  * Standard ARDUX layer definitions
  * !!!!!!!!!! FOR LEFT HANDED USE !!!!!!!!!!
  *****************************************/
-#if defined ARDUX_LEFT
 / {
 	keymap {
 		compatible = "zmk,keymap";
@@ -346,7 +335,7 @@
 			>;
 		};
 		numbers {
-			display-name = "Numbers";
+			display-name = "Number";
 			bindings = <
 				LEADING_NONES
 				&none                   &kp N1    &kp N2    &kp N3
@@ -427,4 +416,3 @@
 		};
 	};
 };
-#endif
