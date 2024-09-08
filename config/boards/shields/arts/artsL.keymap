@@ -238,7 +238,7 @@
 
 		combo_z               { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 		combo_arrow_d         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_O>; bindings = <&kp DOWN>; };
-		combo_arrow_u         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_O>; bindings = <&kp UP>; };
+		combo_arrow_u         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_E KEY_Y KEY_I KEY_S>; bindings = <&kp UP>; };
 
 		combo_layer_functions { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_T KEY_I KEY_S KEY_O>; bindings = <&tog LAYER_ID_FUNCTIONS>; };
 
