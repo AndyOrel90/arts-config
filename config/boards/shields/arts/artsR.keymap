@@ -224,6 +224,8 @@
 		combo_bt_ldr       { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_I KEY_O>; bindings = <&bootloader>; };
 		combo_ctrl         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_O>; bindings = <&sk LCTRL>; };
 		combo_caps_lock    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_A>; bindings = <&kp CAPS>; };
+		combo_arrow_r      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_E KEY_S KEY_R>; bindings = <&kp RIGHT>; };
+		combo_arrow_l      { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_E KEY_S>; bindings = <&kp LEFT>; };
 
 		combo_num_period  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_N KEY_E KEY_I>; bindings = <&kp PERIOD>; };
 		combo_num_comma   { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_3>; key-positions = <KEY_T KEY_S KEY_R>; bindings = <&kp COMMA>; };
@@ -240,6 +242,9 @@
 		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_N KEY_T KEY_O KEY_A>; bindings = <&tog LAYER_ID_BT_SEL>; };
 
 		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_N KEY_E KEY_I KEY_O>; bindings = <&kp Z>; };
+		combo_arrow_d         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_T KEY_E KEY_I KEY_O>; bindings = <&kp DOWN>; };
+		combo_arrow_u         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_N KEY_S KEY_R KEY_A>; bindings = <&kp UP>; };
+
 		combo_layer_functions { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_N KEY_T KEY_E KEY_S>; bindings = <&tog LAYER_ID_FUNCTIONS>; };
 	};
 };
