@@ -323,6 +323,12 @@
 		ctrl_alt_kp: ctrl_alt_kp { compatible = "zmk,behavior-hold-tap";
 						#binding-cells = <2>; tapping-term-ms = <TIMEOUT_LAYER_HOLD>; flavor = "tap-preferred";
 						bindings = <&sk>, <&sk>; };
+		td_n_key: td_mt {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&mo LAYER_ID_PARENTHETICALS ARDUX_BASE_N>, <&kt LCTRL>;
+        };
 	};
 };
 
@@ -337,7 +343,7 @@
 			display-name = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N
+				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &td_n_key/*&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N*/
 				MIDDLE_NONES
 				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S    &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T
 				TRAILING_NONES
