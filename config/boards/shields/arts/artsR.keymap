@@ -329,6 +329,18 @@
             tapping-term-ms = <250>;
             bindings = <&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N>, <&kt LCTRL>;
         };
+		td_e_key: td_e_key {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp ARDUX_BASE_E>, <&kt LSHIFT>;
+        };
+		td_i_key: td_i_key {
+            compatible = "zmk,behavior-tap-dance";
+            #binding-cells = <0>;
+            tapping-term-ms = <250>;
+            bindings = <&kp ARDUX_BASE_I>, <&kt LC(LSHIFT)>;
+        };
 	};
 };
 
@@ -343,7 +355,7 @@
 			display-name = "Base";
 			bindings = <
 				LEADING_NONES
-				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &kp ARDUX_BASE_I     &kp ARDUX_BASE_E     &td_n_key
+				&layer_custom_kp LAYER_ID_CUSTOM   ARDUX_BASE_O        &td_i_key     &td_e_key     &td_n_key
 				MIDDLE_NONES
 				&layer_numbers_kp LAYER_ID_NUMBERS ARDUX_BASE_A          &kp ARDUX_BASE_R     &kp ARDUX_BASE_S    &layer_symbols_kp LAYER_ID_SYMBOLS ARDUX_BASE_T
 				TRAILING_NONES
