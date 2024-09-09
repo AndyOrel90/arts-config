@@ -326,7 +326,7 @@
 		td_n_key: td_n_key {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <300>;
+            tapping-term-ms = <250>;
             bindings = <&layer_parentheticals_kp LAYER_ID_PARENTHETICALS ARDUX_BASE_N>, <&kt LCTRL>;
         };
 	};
